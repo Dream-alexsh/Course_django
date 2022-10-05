@@ -19,6 +19,7 @@ services:
       - frontend:/app/build
     depends_on:
       - db
+    restart: always
 
   nginx:
     image: nginx:1.19.3
